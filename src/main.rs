@@ -10,7 +10,7 @@ use std::time::Duration;
 fn main() {
     // Get the path to the file to tail from the command line arguments
     let path = std::env::args().nth(1).expect("Missing file path..");
-    println!("watching {}. Press CTRL+C to exit.", path);
+    println!("Watching file: {}. Press CTRL+C to exit.", path);
 
     // Tail the file
     if let Err(e) = watch(path) {
