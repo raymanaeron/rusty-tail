@@ -46,7 +46,9 @@ fn watch<P: AsRef<Path>>(path: P) -> notify::Result<()> {
                 let lines = lines_from_file(&mut file, 1);
 
                 // Whatever we want to do with the read. In this case, we are just writing it to the console
-                println!("{:?}", lines[0]);
+                if lines.len() > 0 {
+                    println!("{:?}", lines[0]);
+                }
             }
             Err(e) => println!("watch error: {:?}", e),
         }
