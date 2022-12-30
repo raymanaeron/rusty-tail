@@ -1,2 +1,2 @@
 # What is this program about?
-This program takes a file path as an argument and monitors the file for changes. If there is any change, it reads only the last line and outputs to the console. This program detects when another program writes a new line to the file. 
+This program takes a text file path as an argument and monitors the file for changes. If there is any change, it reads only the last line and outputs to the console. This program detects when another program writes a new line to the file. 
